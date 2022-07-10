@@ -1,0 +1,95 @@
+.divisao {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secao_de_titulo {
+  height: 10%;
+  min-height: 10%;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.secao_de_itens {
+  height: 93%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.esquerda {
+  width: 3%;
+}
+
+.meio {
+  width: 96%;
+  height: 100%;
+}
+
+
+.lista_de_itens {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.item {
+  width: 24%;
+  max-width: 24%;
+  height: 100%;
+  max-height: 100%;
+
+}
+.item:hover{
+  box-shadow: -1px 2px 5px 0px #0303;
+}
+.imagem_do_produto {
+  background-image: url(https://a-static.mlcdn.com.br/280x210/iphone-11-apple-64gb-branco-61-12mp-ios/magazineluiza/155614100/af1cd7d9c89d7306b52490a0ce1b8b34.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 50%;
+}
+.informacoes_do_produto {
+  width: 100%;
+  height: 50%;
+
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.vallor_anterior::after {
+  content: " "; 
+  display: block; 
+  clear: both; 
+  margin-bottom: 15px;
+}
+
+.direita .esquerda {
+  display: flex;
+}
+
+.direita {
+  width: 3%;
+  align-items: flex-end;
+}
+
+.bnt_direita {
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 10px;
+}
+
+.bnt_esquerda {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+}
