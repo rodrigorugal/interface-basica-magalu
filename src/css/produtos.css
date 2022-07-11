@@ -46,7 +46,7 @@
   max-width: 24%;
   height: 100%;
   max-height: 100%;
-
+  padding: 10px;
 }
 .item:hover{
   box-shadow: -1px 2px 5px 0px #0303;
@@ -66,11 +66,30 @@
   align-items: flex-start;
   justify-content: space-evenly;
 }
-.vallor_anterior::after {
-  content: " "; 
+.valor_anterior {
+ color: #808080da;
+ text-decoration: line-through;
+}
+.valor_atual {
+  font-size: 22px;
+
+}
+
+.valor_anterior::after {
+  content: ""; 
   display: block; 
   clear: both; 
-  margin-bottom: 15px;
+  color: #000;
+}
+
+.marcador {
+  color: #59c00b;
+}
+.marcador::after {
+  content: ""; 
+  display: block; 
+  clear: both;
+  margin-bottom: 5px;
 }
 
 .direita .esquerda {
