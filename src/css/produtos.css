@@ -14,6 +14,9 @@
   justify-content: center;
 }
 
+.titulo {
+  font-size: 22px;
+}
 
 .secao_de_itens {
   height: 93%;
@@ -31,7 +34,6 @@
   height: 100%;
 }
 
-
 .lista_de_itens {
   width: 100%;
   height: 100%;
@@ -48,7 +50,7 @@
   max-height: 100%;
   padding: 10px;
 }
-.item:hover{
+.item:hover {
   box-shadow: -1px 2px 5px 0px #0303;
 }
 .imagem_do_produto {
@@ -67,18 +69,17 @@
   justify-content: space-evenly;
 }
 .valor_anterior {
- color: #808080da;
- text-decoration: line-through;
+  color: #808080da;
+  text-decoration: line-through;
 }
 .valor_atual {
   font-size: 22px;
-
 }
 
 .valor_anterior::after {
-  content: ""; 
-  display: block; 
-  clear: both; 
+  content: "";
+  display: block;
+  clear: both;
   color: #000;
 }
 
@@ -86,8 +87,8 @@
   color: #59c00b;
 }
 .marcador::after {
-  content: ""; 
-  display: block; 
+  content: "";
+  display: block;
   clear: both;
   margin-bottom: 5px;
 }

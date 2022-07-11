@@ -72,6 +72,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-bottom: 65vh;
 }
 
 .container {
@@ -96,7 +98,87 @@ header {
 .a2 {
   height: 230px;
   background-image: url(https://s.mlcdn.com.br/banner/campanhas/0405deskofertasdatvnovo.png);
+  margin-bottom: 10px;
 }
+
+.a2-1 {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+.a2-2 {
+  width: 32%;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+}
+.c1 {
+  background-image: url(https://s.mlcdn.com.br/banner/campanhas/medium_2_desk_858x420_01_A.png);
+}
+.c2 {
+  background-image: url(https://s.mlcdn.com.br/banner/campanhas/medium_2_desk_858x420_01_B.png);
+}
+.c3 {
+  background-image: url(https://s.mlcdn.com.br/banner/campanhas/medium_2_desk_858x420_01_C.png);
+}
+
+.menu_ofertas .secao_de_titulo {
+  height: 20%;
+}
+.t-oferta {
+  width: 100%;
+}
+
+.secao_de_icones {
+  height: 80%;
+  /* background-color: #051829; */
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.caixa_de_oferta {
+  width: 10%;
+  height: 100%;
+}
+.ico {
+  width: 100%;
+  height: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.i-1 {
+  background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/cliente-ouro.svg);
+}
+.i-2 {
+  background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/ofertas-do-dia.svg);
+}
+.i-3 {
+  background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/mercado.svg);
+}
+.i-4 {
+  background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/esportes.svg);
+}
+.i-5 {
+  background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/moda.svg);
+}
+.i-6 {
+  background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/beleza.svg);
+}
+.i-7 {
+  background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/livros.svg);
+}
+.i-8 {
+  background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/compra-junto.svg);
+  background-size: contain;
+
+}
+.i-9 {
+  background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/explorar.svg);
+}
+
 
 .a3 {
   border-radius: 0;
@@ -164,6 +246,19 @@ header {
 
 .a5 {
   height: 820px;
+}
+
+.a5 .secao_de_titulo {
+  height: 5%;
+  min-height: 5%;
+}
+
+.a5 .item {
+  width: 15%;
+}
+
+.a5 .propaganda {
+  margin: 0;
 }
 
 /* FOOTER */
