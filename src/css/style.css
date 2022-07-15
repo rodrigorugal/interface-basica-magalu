@@ -41,6 +41,13 @@ main {
   background-position: center;
 }
 
+.centralizar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* HEADER */
 
 header {
@@ -53,27 +60,127 @@ header {
   background-color: #0086ff;
 }
 .h {
-  background-color: #e05b5b46;
+  color: #fff;
   height: 100%;
+  display: grid;
+  grid-template-columns: 95px 140px 1fr;
+  grid-template-areas:
+    ". . links"
+    "lu logo  widgets"
+    "lu menus menus";
+}
+.h a {
+  color: #fff;
+}
+
+.links {
+  grid-area: links;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 14px;
+  font-weight: 300;
+}
+.links .links-1 {
+  width: 50%;
+  height: 100%;
+}
+.links .links-2 {
+  width: 39%;
+  height: 100%;
+}
+
+.links nav ul {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imagem_magalu {
+  background-image: url(https://wx.mlcdn.com.br/site/desk/header/logo-lu.png);
+  grid-area: lu;
+}
+.texto_magalu {
+  grid-area: logo;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.centro_do_cabecalho {
+  grid-area: widgets;
+  display: flex;
+}
+
+.centro_do_cabecalho .input_pesquisa {
+  width: 53%;
+  height: 100%;
+}
+.centro_do_cabecalho .input_pesquisa input {
+  width: 95%;
+  height: 45%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.sub_menu {
+  height: 100%;
+  width: 47%;
+  min-width: 47%;
+}
+.sub_menu nav {
+  height: 100%;
+  width: 100%;
+}
+.sub_menu nav ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sub_menu nav ul li {
+  width: 25%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sub_menu nav ul li .bem_vindo {
+  font-weight: bold;
+}
+.sub_menu nav ul li .bem_vindo::after {
+  content: " ";
+  display: block;
+  margin-bottom: 2px;
+}
+
+.menus {
+  grid-area: menus;
+}
+.menus nav {
+  height: 100%;
+}
+.menus ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* BODY FILE */
 
-.centralizar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .produtos {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  margin-bottom: 65vh;
 }
 
 .container {
@@ -138,7 +245,6 @@ header {
   justify-content: space-evenly;
 }
 
-
 .caixa_de_oferta {
   width: 10%;
   height: 100%;
@@ -173,12 +279,10 @@ header {
 .i-8 {
   background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/compra-junto.svg);
   background-size: contain;
-
 }
 .i-9 {
   background-image: url(https://wx.mlcdn.com.br/site/desk/popular-departments/explorar.svg);
 }
-
 
 .a3 {
   border-radius: 0;
@@ -245,7 +349,8 @@ header {
 }
 
 .a5 {
-  height: 820px;
+  height: 1509px;
+  margin-bottom: 60px;
 }
 
 .a5 .secao_de_titulo {
@@ -259,6 +364,194 @@ header {
 
 .a5 .propaganda {
   margin: 0;
+}
+
+.p-a2 {
+  height: 82px;
+  background-image: url(https://wx.mlcdn.com.br/site/desk/banners/banner_empresas.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.modificador-1 {
+}
+.modificador-1 .i-1 {
+  background-image: url(https://wx.mlcdn.com.br/site/shared/services/cliente-ouro.png);
+}
+.modificador-1 .i-2 {
+  background-image: url(https://wx.mlcdn.com.br/site/shared/services/cartao-luiza.png);
+}
+.modificador-1 .i-3 {
+  background-image: url(https://wx.mlcdn.com.br/site/shared/services/luizaseg.png);
+}
+.modificador-1 .i-4 {
+  background-image: url(https://wx.mlcdn.com.br/site/shared/services/consorcio.png);
+}
+.modificador-1 .i-5 {
+  background-image: url(https://wx.mlcdn.com.br/site/shared/services/parceiro-magalu.png);
+}
+.modificador-1 .i-6 {
+  background-image: url(https://wx.mlcdn.com.br/site/shared/services/listacasamento.png);
+}
+.modificador-1 .i-7 {
+  background-image: url(https://wx.mlcdn.com.br/site/shared/services/garantia.png);
+}
+
+.f-a2-1 .c1 {
+  background-image: url(https://s.mlcdn.com.br/banner/campanhas/chadebebe_rodape_060421.png);
+}
+.f-a2-1 .c2 {
+  background-image: url(https://tpc.googlesyndication.com/simgad/10499830394249889320?);
+}
+
+.f-a2-1 .c1,
+.f-a2-1 .c2 {
+  width: 49%;
+  border-radius: 0px;
+  margin: 0;
+}
+
+.estilo_grid {
+  height: 103vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+      "topo topo topo"
+      "c1 c2 c3"
+      "inf inf inf";
+  grid-template-rows: 0.25fr 3fr 0.45fr;
+}
+.grid_topo {
+  background-color: #a400e1;
+  border-radius: 5px;
+  grid-area: topo;
+
+  display: flex;
+  align-items: center;
+}
+.caixa_img_magalu_grid {
+  position: relative;
+  width: 80px;
+  height: 100%;
+}
+.grid_topo .img_magalu_grid {
+  width: 64px;
+  position: absolute;
+  top: -15px;
+}
+.divisor_grid_topo {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.topo_direita {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.redes {
+  align-self: flex-end;
+
+  width: 200px;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rede_social {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.grid_c1,
+.grid_c2,
+.grid_c3 {
+  padding: 10px;
+  
+}
+.grid_c1 {
+  grid-area: c1;
+  /* background-color: #e72a2a; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteudo_grid_inferior {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conteudo_grid_inferior img {
+  border-radius: 20px;
+  border: 1px solid #4040408a;
+}
+.conteudo_imagem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  padding-bottom: 20px;
+}
+.conteudo_texto {
+  width: 50%;
+  padding: 0 10px;
+}
+.conteudo_texto h2 {
+  font-size: 20px;
+  padding: 10px 0;
+  color: #a400e1;
+}
+.conteudo_texto p {
+  color: #404040;
+  font-size: 14px;
+}
+.caixa_g {
+  width: 100%;
+  height: 50px;
+}
+.g1 {
+  width: 100%;
+  padding: 10px;
+
+  margin-bottom: 20px;
+  border-top: 1px solid #4040408a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.g1 h2 {
+  padding: 5px 0;
+}
+.g_img {
+  width: 25%;
+  height: 100%;
+  margin-right: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.g1 img {
+  border-radius: 5px;
+
+}
+
+.grid_c2 {
+  grid-area: c2;
+}
+.grid_c3 {
+  grid-area: c3;
+}
+.grid_inferior {
+  grid-area: inf;
+  background-color: #3e3e3e;
 }
 
 /* FOOTER */
