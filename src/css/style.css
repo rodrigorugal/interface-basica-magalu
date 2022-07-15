@@ -551,7 +551,42 @@ header {
 }
 .grid_inferior {
   grid-area: inf;
-  background-color: #3e3e3e;
+  width: 100%;
+  height:100%;
+  color: #a400e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.g_inferior_1, .g_inferior_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.g_inferior_1 {
+  width: 63%;
+  height: 50%;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+}
+.g_inferior_2 {
+  width: 50%;
+  height: 50%;
+}
+
+.botao_inferior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  padding: 10px 0px;
+  border: 2px solid #a400e1;
+ 
+  border-radius: 10px;
+
 }
 
 /* FOOTER */
