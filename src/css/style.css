@@ -48,7 +48,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 /* HEADER */
@@ -420,9 +419,9 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-      "topo topo topo"
-      "c1 c2 c3"
-      "inf inf inf";
+    "topo topo topo"
+    "c1 c2 c3"
+    "inf inf inf";
   grid-template-rows: 0.25fr 3fr 0.45fr;
 }
 .grid_topo {
@@ -473,7 +472,6 @@ header {
 .grid_c2,
 .grid_c3 {
   padding: 10px;
-  
 }
 .grid_c1 {
   grid-area: c1;
@@ -498,7 +496,7 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  
+
   padding-bottom: 20px;
 }
 .conteudo_texto {
@@ -543,7 +541,6 @@ header {
 }
 .g1 img {
   border-radius: 5px;
-
 }
 
 .grid_c2 {
@@ -555,14 +552,15 @@ header {
 .grid_inferior {
   grid-area: inf;
   width: 100%;
-  height:100%;
+  height: 100%;
   color: #a400e1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.g_inferior_1, .g_inferior_2 {
+.g_inferior_1,
+.g_inferior_2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -587,14 +585,13 @@ header {
   width: 200px;
   padding: 10px 0px;
   border: 2px solid #a400e1;
- 
-  border-radius: 10px;
 
+  border-radius: 10px;
 }
 
 /* FOOTER */
 footer {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 
   display: flex;
@@ -608,7 +605,7 @@ footer .container {
 
 footer .f1 {
   background-color: #0086ff;
-  height: 67%;
+  height: 70%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -616,10 +613,9 @@ footer .f1 {
 }
 
 footer .f2 {
-  height: 10%;
+  height: 30%;
   display: flex;
   align-items: center;
-  /* background-color: springgreen; */
 }
 footer .f1 .container {
   display: flex;
@@ -627,7 +623,7 @@ footer .f1 .container {
   align-items: center;
 }
 footer .f2 .container {
-  /* background-color: aquamarine; */
+
 }
 
 footer .caixa_de_paragrados {
@@ -644,10 +640,10 @@ footer .caixa_de_paragrados {
 
 .formas_de_pagamento {
   width: 80%;
-  height: 290px;
+  height: 100%;
 }
 .pagamento_ {
-  height: 40%;
+  height: 15%;
   width: 100%;
   color: #fff;
   text-align: center;
@@ -685,7 +681,7 @@ footer .caixa_de_paragrados {
 }
 
 .caixa_das_marcas {
-  height: 50%;
+  height: 20%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -716,15 +712,22 @@ footer .caixa_de_paragrados {
 .listas_de_servico {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+  margin-top: 10px;
+}
+.listas_de_servico p {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+
 }
 
 .link-section {
   margin-right: 20px;
 }
 
-.lista{
+.lista {
   width: 100%;
   margin-bottom: 10px;
 }
@@ -733,4 +736,23 @@ footer .caixa_de_paragrados {
 }
 .item_lista_servico {
   margin-right: 5px;
+  font-size: 14px;
+}
+
+.l2 {
+  height: 100%;
+  width: 240px;
+  margin: 0;
+}
+.l2_2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.l2_2 p {
+  padding-bottom: 20px;
+}
+.l2_2 h2 {
+  padding-bottom: 10px;
+  color: #fff;
 }
